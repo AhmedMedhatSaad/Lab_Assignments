@@ -2,6 +2,7 @@
 echo -e "Enter Positive Integer : \c"
 read n
 sum=0
+i=0
 while [ $n != 0 ]
 do
 if [ $n -lt 0 ]
@@ -12,8 +13,9 @@ sum=$((sum + n))
 fi
   echo -e "Enter Positive Integer : \c"
   read n
+  i=$((i + 1))
 
 done
 
 
-echo "Average = $((sum / 2))"
+echo "Average = $((sum / i))"
